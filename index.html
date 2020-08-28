@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Quiz Math</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="random_bg_color">
+      <!-- start -->
+      <div id="inputan" class="start">
+        <h1>Math Quiz</h1>
+        <br />
+        <button id="start-btn" class="start-btn btn" onclick="startQuiz()">
+          Start
+        </button>
+      </div>
+      <!-- proses -->
+      <div id="soal" style="display: none">
+        Berapa <label id="tampilAngka"> </label> +
+        <label id="tampilAngka2"></label>? <br />
+        <!-- <span id="hasilAngka"></span> -->
+        <div id="tampungButton"></div>
+        <!-- <button id="jawabBenar" onclick="hasilAngka()">2</button>
+        <button id="jawabSalah" onclick="hasilAngka()">4</button>
+        <button id="jawabSalah" onclick="hasilAngka()">8</button>
+        <button id="jawabSalah" onclick="hasilAngka()">10</button> -->
+      </div>
+      <!-- output -->
+      <div id="benar" style="display: none">
+        <label>benar</label><br />
+        <!-- <button onclick="next()">Next</button> -->
+      </div>
+      <div id="salah" style="display: none">
+        <label>salah</label><br />
+        <button onclick="ulang()">Ulang</button>
+      </div>
+    </div>
+  </body>
+</html>
